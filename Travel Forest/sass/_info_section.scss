@@ -1,0 +1,48 @@
+#info-section{
+  color: #cfcfcf;
+  margin: px-to-rem(82px);
+
+  article{
+    display: flex;
+    align-items: center;
+    margin: px-to-rem(32px);
+
+    figure{
+      width: 42%;
+      height: px-to-rem(222px);
+      background-size: cover;
+      background-position: center;
+      flex-shrink: 0;
+      transition: all 1s;
+
+      &:hover{
+        transform: scale(1.04);
+      }
+    }
+
+    div{
+      margin-left: px-to-rem(82px);
+
+      h2{
+        font-size: px-to-rem(30px);
+        margin-bottom: px-to-rem(8px);
+      }
+
+      p{
+        font-size: px-to-rem(16px);
+        width: 70%;
+        line-height: 220%;
+      }
+    }
+
+  }
+  article:nth-of-type(1) figure {background-image: url(get-image("italy.jpg"));}
+  article:nth-of-type(2) figure {background-image: url(get-image("paris.jpg"));}
+  article:nth-of-type(3) figure {background-image: url(get-image("india.jpg"));}
+
+  article:nth-of-type(2){
+    position: relative;
+    left: 60px;
+  }
+
+}
